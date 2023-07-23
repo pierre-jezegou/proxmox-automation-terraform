@@ -1,7 +1,7 @@
 resource "proxmox_lxc" "lxc-demo" {
     target_node     = var.TARGET_NODE
     hostname        = "lxc-basic"
-    ostemplate      = "${var.EXTERNAL_STORAGE}:template/cache/debian-12-standard_12.0-1_amd64.tar.zst"
+    ostemplate      = "${var.EXTERNAL_STORAGE}:vztmpl/debian-12-standard_12.0-1_amd64.tar.zst"
     password        = var.LCX_PASSWORD
     unprivileged    = false
     start           = true
