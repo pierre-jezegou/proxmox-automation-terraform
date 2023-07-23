@@ -8,16 +8,16 @@ terraform {
   }
 }
 
-variable "proxmox_api_url" {
+variable "PM_API_URL" {
   type = string
 }
 
-variable "proxmox_api_token_id" {
+variable "PM_API_TOKEN_ID" {
   type = string
   sensitive = true
 }
 
-variable "proxmox_api_token_secret" {
+variable "PM_API_TOKEN_SECRET" {
   type = string
   sensitive = true
 }
