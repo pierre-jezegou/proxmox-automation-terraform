@@ -22,19 +22,3 @@ resource "proxmox_lxc" "lxc-demo" {
 
     # No nameserver specified -> Proxmox host values
 }
-
-
-#### VARIABLES ####
-
-variable "LCX_PASSWORD" {
-    type = string
-    sensitive = true
-}
-
-variable "TARGET_NODE" {
-    type = string
-}
-
-variable "EXTERNAL_STORAGE" {
-    type = string
-}
