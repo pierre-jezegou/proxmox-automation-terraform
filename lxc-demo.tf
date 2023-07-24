@@ -3,7 +3,7 @@ resource "proxmox_lxc" "lxc-demo" {
     hostname        = "lxc-basic"
     ostemplate      = "${var.EXTERNAL_STORAGE}:vztmpl/debian-12-standard_12.0-1_amd64.tar.zst"
     password        = var.LCX_PASSWORD
-    unprivileged    = false
+    unprivileged    = true
     start           = true
     vmid            = 0 # Next available vmid used
     cores           = 1
